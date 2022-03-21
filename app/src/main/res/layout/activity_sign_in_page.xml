@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sign_In_page">
+
+    <TextView
+        android:id="@+id/textView_signIn"
+        android:layout_width="314dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="28dp"
+        android:background="#8BC34A"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Sign In to News of India"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/username_signIn"
+        android:layout_width="309dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="Enter Your User ID"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/User_id"
+        app:layout_constraintTop_toBottomOf="@+id/User_id" />
+
+    <TextView
+        android:id="@+id/User_id"
+        android:layout_width="121dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center_vertical"
+        android:text="Username"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_signIn" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="121dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center_vertical"
+        android:text="Password"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/User_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/User_id"
+        app:layout_constraintTop_toBottomOf="@+id/username_signIn" />
+
+    <EditText
+        android:id="@+id/passwordSignIn"
+        android:layout_width="309dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="Enter your Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/username_signIn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/username_signIn"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/Login_button"
+        android:layout_width="199dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="64dp"
+        android:text="Login"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordSignIn" />
+
+    <TextView
+        android:id="@+id/forgetPassword_id"
+        android:layout_width="132dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="44dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:text="Forgot Password?"
+        android:textColor="@color/teal_200"
+        app:layout_constraintBottom_toTopOf="@+id/Login_button"
+        app:layout_constraintStart_toStartOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="267dp"
+        android:layout_height="215dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/news_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
